@@ -9,6 +9,4 @@ RUN service ssh start
 
 COPY --chmod=0755 docker-entrypoint.sh .
 
-EXPOSE 22
-
 ENTRYPOINT ["/docker-entrypoint.sh"]

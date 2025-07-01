@@ -11,14 +11,6 @@ environment:
     - PACKAGES=<packages> # Not required
 ```
 
-## Exposer des ports
-
-Pour ouvrir les ports, veuillez exposer les ports à utiliser dans Dockerfile (avant le lancement de votre projet).
-
-Il faut ensuite bind les ports dans le fichier docker-compose.yaml.
-
-Pour ces deux steps, référez vous à l'exemple du port SSH.
-
 ## Installation
 
 Créer l'image : `docker build -t debian-vm .`
