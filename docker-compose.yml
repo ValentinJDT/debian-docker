@@ -1,0 +1,14 @@
+services:
+    debian-a:
+        image: debian-vm
+        hostname: deb-a
+        ports:
+            - "3322:22"
+        tty: true
+        stdin_open: true
+        volumes:
+            - ./data:/data
+        environment:
+            - USERNAME=debian
+            - PASSWORD=password
+            - PACKAGES=nginx curl wget git nano htop tree
